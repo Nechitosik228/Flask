@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Портфоліо</h1>
+{% from '_helpers.html' import render_iterable %}
+{{ render_iterable(projects) }}
+{{ render_iterable(students, outer_tag='ol', inner_tag="li style=list-style-type:lower-alpha") }}
+{% endblock %}

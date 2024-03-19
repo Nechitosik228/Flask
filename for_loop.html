@@ -1,0 +1,10 @@
+{% extends "_list_view.html" %}
+
+{% block list_view_content %}
+    {% for key, val in context.items() %}
+    {% if key == 1  %} <span>first</span> {% endif %}
+        <li>{{ key }} => {{ val }}</li>
+    {% endfor %}
+
+    
+{% endblock list_view_content %}
